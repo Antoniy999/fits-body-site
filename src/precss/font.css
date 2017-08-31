@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Neuron-Black';
+  src: url('../fonts/Neuron-Black.woff') format('woff'),
+       url('../fonts/Neuron-Black.ttf') format('truetype'),
+       url('../fonts/Neuron-Black.svg#Neuron-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuron-DemiBold';
+  src: url('../fonts/Neuron-DemiBold.eot');
+  src: url('../fonts/Neuron-DemiBold.woff2') format('woff2'),
+       url('../fonts/Neuron-DemiBold.woff') format('woff'),
+       url('../fonts/Neuron-DemiBold.ttf') format('truetype'),
+       url('../fonts/Neuron-DemiBold.svg#Neuron-DemiBold') format('svg'),
+       url('../fonts/Neuron-DemiBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuron';
+  src: url('../fonts/Neuron.eot');
+  src: url('../fonts/Neuron.woff2') format('woff2'),
+       url('../fonts/Neuron.woff') format('woff'),
+       url('../fonts/Neuron.ttf') format('truetype'),
+       url('../fonts/Neuron.svg#Neuron') format('svg'),
+       url('../fonts/Neuron.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuron-Light';
+  src: url('../fonts/Neuron-Light.woff') format('woff'),
+       url('../fonts/Neuron-Light.ttf') format('truetype'),
+       url('../fonts/Neuron-Light.svg#Neuron-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuron-ExtraBold';
+  src: url('../fonts/Neuron-ExtraBold.woff') format('woff'),
+       url('../fonts/Neuron-ExtraBold.ttf') format('truetype'),
+       url('../fonts/Neuron-ExtraBold.svg#Neuron-ExtraBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -4,7 +4,7 @@ const settings = {
 	outputStyle: 'less',
 	container: {
 		maxWidth: '1170px',
-		fields: '30px'
+		fields: '0px'
 	},
 	breakPoints: {
 		md: {
@@ -12,7 +12,7 @@ const settings = {
             fields: '20px'
         },
         sm: {
-            width: '780px',
+            width: '768px',
             fields: '15px'
         },
         xs: {
