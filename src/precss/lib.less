@@ -1,0 +1,20 @@
+.border_radius(@r){
+  border-radius: @r;
+  -moz-border-radius: @r;
+  -webkit-border-radius: @r;
+  -o-border-radius: @r;
+  -ms-border-radius: @r;
+}
+
+.font-face (@folder; @file; @family){
+  @font-face{
+    font-family: @family;
+
+    src: url("@{folder}@{file}.eot?#iefix") format('embedded-opentype'),
+    url("@{folder}@{file}.woff") format('woff'),
+    url("@{folder}@{file}.ttf")  format('truetype'),
+    url("@{folder}@{file}.svg#@{file}") format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
