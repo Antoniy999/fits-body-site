@@ -1,7 +1,5 @@
 @import "font.css";
-
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic');
-
 body,
 div,
 dl,
@@ -28,18 +26,15 @@ td {
   margin: 0;
   padding: 0;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 fieldset,
 img,
 abbr {
   border: 0;
 }
-
 address,
 caption,
 cite,
@@ -52,16 +47,13 @@ var {
   font-style: normal;
   font-weight: normal;
 }
-
 ul li {
   list-style: none;
 }
-
 caption,
 th {
   text-align: left;
 }
-
 h1,
 h2,
 h3,
@@ -71,15 +63,12 @@ h6 {
   font-size: 100%;
   font-weight: normal;
 }
-
 sup {
   vertical-align: text-top;
 }
-
 sub {
   vertical-align: text-bottom;
 }
-
 input,
 textarea,
 select {
@@ -87,11 +76,9 @@ select {
   font-size: inherit;
   font-weight: inherit;
 }
-
 legend {
   color: #000;
 }
-
 article,
 aside,
 details,
@@ -106,30 +93,49 @@ section,
 main {
   display: block;
 }
-
 img {
   max-width: 100%;
   height: auto;
 }
-
 .wrapper {
   max-width: 1170px;
   background-color: lightgrey;
   margin: 0 auto;
 }
-
+@media screen and (max-width: 1170px) {
+  .wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 body {
   font-family: 'PT Sans', sans-serif;
   font-color: #3a3b3c;
   font-size: 14px;
   line-height: 1.3;
 }
-
 h1 {
   color: red;
   font-size: 120px;
 }
-
 header {
   height: 139px;
   position: relative;
@@ -140,13 +146,11 @@ header {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-
 header .logo {
   background-color: #e32a44;
   height: 100%;
   width: 269px;
 }
-
 header .search-box {
   box-sizing: border-box;
   margin-left: 15px;
@@ -154,18 +158,25 @@ header .search-box {
   word-wrap: break-word;
   width: calc(25% - 30px);
 }
-
+@media screen and (max-width: 720px) {
+  header .search-box {
+    width: calc(50% - 30px);
+  }
+}
+@media screen and (max-width: 576px) {
+  header .search-box {
+    width: calc(83.33333333333334% - 30px);
+  }
+}
 header .top-menu {
   position: relative;
   text-align: left;
 }
-
 header .top-menu li {
   display: inline-block;
   margin-right: -4px;
   position: relative;
 }
-
 header .top-menu li a {
   display: block;
   line-height: 70px;
@@ -175,11 +186,9 @@ header .top-menu li a {
   font-weight: 700;
   text-transform: uppercase;
 }
-
 header .top-menu li a:hover {
   color: #bebebe;
 }
-
 header .top-menu li .hidden-menu {
   background-color: #fff;
   width: 300px;
@@ -189,7 +198,6 @@ header .top-menu li .hidden-menu {
   z-index: 9999;
   display: none;
 }
-
 .main-banner {
   width: 100%;
   height: 509px;
@@ -197,56 +205,18 @@ header .top-menu li .hidden-menu {
   transform: translate(0%, 0);
   background: url("../images/main-banner.jpg") no-repeat center;
 }
-
 /*Mixin*/
-
 .dark-side {
   color: #05fffd;
 }
-
+@media screen and (max-width: 992px) {
+  .dark-side {
+    width: 70%;
+  }
+}
 .progit .row {
   display: flex;
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
-}
-
-@media screen and (max-width: 1170px) {
-  .wrapper {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .wrapper {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .dark-side {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .wrapper {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  header .search-box {
-    width: calc(50% - 30px);
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .wrapper {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  header .search-box {
-    width: calc(83.33333333333334% - 30px);
-  }
 }
