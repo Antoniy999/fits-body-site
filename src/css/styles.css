@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 @import "font.css";
+=======
+/*@import "font.css";*/
+
+>>>>>>> e150863d09b126f1b63d6fa5a6895173311984be
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic');
 body,
 div,
@@ -97,6 +102,83 @@ img {
   max-width: 100%;
   height: auto;
 }
+<<<<<<< HEAD
+=======
+
+@font-face {
+  font-family: "N";
+  src: url("../fonts/Neuron.eot?#iefix") format('embedded-opentype'), url("../fonts/Neuron.woff") format('woff'), url("../fonts/Neuron.ttf") format('truetype'), url("../fonts/Neuron.svg#Neuron") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NB";
+  src: url("../fonts/Neuron-Black.eot?#iefix") format('embedded-opentype'), url("../fonts/Neuron-Black.woff") format('woff'), url("../fonts/Neuron-Black.ttf") format('truetype'), url("../fonts/Neuron-Black.svg#Neuron-Black") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NDB";
+  src: url("../fonts/Neuron-DemiBold.eot?#iefix") format('embedded-opentype'), url("../fonts/Neuron-DemiBold.woff") format('woff'), url("../fonts/Neuron-DemiBold.ttf") format('truetype'), url("../fonts/Neuron-DemiBold.svg#Neuron-DemiBold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NL";
+  src: url("../fonts/Neuron-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/Neuron-Light.woff") format('woff'), url("../fonts/Neuron-Light.ttf") format('truetype'), url("../fonts/Neuron-Light.svg#Neuron-Light") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NEB";
+  src: url("../fonts/Neuron-ExtraBold.eot?#iefix") format('embedded-opentype'), url("../fonts/Neuron-ExtraBold.woff") format('woff'), url("../fonts/Neuron-ExtraBold.ttf") format('truetype'), url("../fonts/Neuron-ExtraBold.svg#Neuron-ExtraBold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+fieldset {
+  border: 1px solid #e6eaee;
+}
+
+/*.icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  vertical-align: bottom;
+  background: url("/assets/course13/bootstrap-sprites.png") no-repeat;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}*/
+
+[class*="icon-"] {
+  background-image: url(../images/sprites.png);
+  display: inline;
+  overflow: hidden;
+}
+
+.icon-arrow {
+  background-position: -92px -234px;
+  width: 9px;
+  height: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.icon-search {
+  background-position: -68px -211px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+>>>>>>> e150863d09b126f1b63d6fa5a6895173311984be
 .wrapper {
   max-width: 1170px;
   background-color: lightgrey;
@@ -127,6 +209,7 @@ img {
   }
 }
 body {
+  background-color: #f6f8fa;
   font-family: 'PT Sans', sans-serif;
   font-color: #3a3b3c;
   font-size: 14px;
@@ -145,18 +228,75 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  /*Top menu*/
 }
 header .logo {
-  background-color: #e32a44;
+  display: block;
+  position: relative;
   height: 100%;
-  width: 269px;
+  width: 270px;
+  background-color: #e32a44;
+  text-decoration: none;
 }
+<<<<<<< HEAD
 header .search-box {
+=======
+
+header .logo .ico-biceps {
+  position: absolute;
+  background: url(../images/logotype.svg) no-repeat;
+  width: 56px;
+  height: 66px;
+  top: 22px;
+  right: 0px;
+}
+
+header .logo .name-text {
+  font-family: NB;
+  font-size: 48px;
+  line-height: 0.7;
+  color: #fff;
+  margin: 22px 0 10px 30px;
+}
+
+header .logo .name-text span {
+  font-family: NDB;
+  font-size: 30px;
+}
+
+header .logo span.sm-text {
+  display: block;
+  font-family: N;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 14px;
+}
+
+header .nav-search {
+>>>>>>> e150863d09b126f1b63d6fa5a6895173311984be
   box-sizing: border-box;
   margin-left: 15px;
   margin-right: 15px;
   word-wrap: break-word;
-  width: calc(25% - 30px);
+  background-color: #f6f8fa;
+  margin: 0;
+}
+
+header .search-box,
+header .top-menu {
+  margin-left: 30px;
+}
+
+header .search {
+  display: inline-block;
+  height: 48px;
+  width: 100%;
+}
+
+header .search-box {
+  background-color: #eff3f6;
+  padding: 1px 6px 5px 6px;
+  height: 53px;
 }
 @media screen and (max-width: 720px) {
   header .search-box {
@@ -170,22 +310,35 @@ header .search-box {
 }
 header .top-menu {
   position: relative;
-  text-align: left;
+}
+
+header .top-menu a:hover {
+  color: #000;
+  background-color: #eaedef;
 }
 header .top-menu li {
-  display: inline-block;
-  margin-right: -4px;
+  float: left;
+  list-style-type: none;
   position: relative;
+  border-left: 1px solid #e8edf1;
 }
+<<<<<<< HEAD
 header .top-menu li a {
-  display: block;
-  line-height: 70px;
-  padding: 0 10px;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
+=======
+
+header .top-menu li:first-child,
+header .top-menu li :last-child {
+  border-left: none;
 }
+
+header .top-menu li span.desc {
+>>>>>>> e150863d09b126f1b63d6fa5a6895173311984be
+  display: block;
+  font-family: NL;
+  font-color: #474c58;
+  font-size: 14px;
+}
+<<<<<<< HEAD
 header .top-menu li a:hover {
   color: #bebebe;
 }
@@ -194,9 +347,71 @@ header .top-menu li .hidden-menu {
   width: 300px;
   top: 100%;
   left: 0;
+=======
+
+header .top-menu li a {
+  display: block;
+  font-family: NDB;
+  line-height: 26px;
+  padding: 15px  18px 13px 18px;
+  color: #000;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+header .top-menu li .sub-menu {
+  display: block;
+  overflow: hidden;
+>>>>>>> e150863d09b126f1b63d6fa5a6895173311984be
   position: absolute;
-  z-index: 9999;
-  display: none;
+  z-index: 10;
+  background: #eaedef;
+  padding: 1px 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+header .top-menu li .sub-menu li {
+  width: 100%;
+  border-bottom: 1px solid #e2e5e8;
+}
+
+header .top-menu li:hover .sub-menu {
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+header .top-menu li .sub-menu li a {
+  display: block;
+  font-family: NL;
+  float: left;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  border-color: transparent;
+  line-height: 10px;
+  text-transform: uppercase;
+}
+
+header .top-menu li .sub-menu a:hover {
+  color: #000;
+  background-color: #f6f8fa;
+  font-weight: 700;
+  font-size: 18px;
+  top: 1px;
+  left: 1px;
 }
 .main-banner {
   width: 100%;
@@ -209,14 +424,63 @@ header .top-menu li .hidden-menu {
 .dark-side {
   color: #05fffd;
 }
-@media screen and (max-width: 992px) {
-  .dark-side {
-    width: 70%;
-  }
-}
+<<<<<<< HEAD
+=======
+
 .progit .row {
   display: flex;
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
 }
+
+/*Media*/
+
+@media screen and (max-width: 1170px) {
+  .wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .top-menu {
+    display: none;
+  }
+}
+
+>>>>>>> e150863d09b126f1b63d6fa5a6895173311984be
+@media screen and (max-width: 992px) {
+  .dark-side {
+    width: 70%;
+  }
+}
+<<<<<<< HEAD
+.progit .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+=======
+
+@media screen and (max-width: 720px) {
+  .wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  header .nav-search {
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  header .nav-search {
+    width: calc(83.33333333333334% - 30px);
+  }
+}
+>>>>>>> e150863d09b126f1b63d6fa5a6895173311984be
